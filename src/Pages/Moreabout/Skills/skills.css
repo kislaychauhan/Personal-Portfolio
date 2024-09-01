@@ -1,0 +1,87 @@
+.skills-container {
+    padding: 0px 40px 0px 40px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+  }
+  
+  .container-heading {
+    padding: 120px 40px 0px 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .head{
+    margin-top: 40px;
+  }
+
+  .container-heading img {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .ui-ux,
+  .development,
+  .graphic,
+  .video-editing {
+    transition-duration: 0.4s;
+    border-radius: 20px;
+  }
+  
+  .ui-ux:hover hr,
+  .development:hover hr,
+  .graphic:hover hr,
+  .video-editing:hover hr {
+    background-color: white;
+  }
+  
+  .ui-ux:hover,
+  .development:hover,
+  .graphic:hover,
+  .video-editing:hover {
+    background-color: #A67B5B; 
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgb(145, 145, 145);
+    color: rgb(225, 225, 225);
+  }
+  
+  .skills {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-family: SoDo Sans;
+    font-weight: bold;
+  }
+  
+  .skills hr {
+    justify-content: center;
+    height: 8px;
+    border: none;
+    background-color:#A67B5B; 
+    border-radius: 4px;
+    line-height: normal;
+    outline: none;
+    margin-top: 4px;
+  }
+  
+  .circle{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .line{
+    rotate: 90deg;
+  }
+  .lining{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

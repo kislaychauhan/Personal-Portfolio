@@ -1,0 +1,36 @@
+.back-container {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    padding: 4px 4px;
+    position: fixed; /* Changed to fixed */
+    background-color: black;
+    margin: 50px; /* You might need to adjust this */
+    align-items: center;
+    width: fit-content; /* Ensure the container has width */
+    height: fit-content;
+    border-radius: 50px;
+    z-index: 1000;
+    border: 1px rgb(191, 191, 191) solid;
+    /* Adjust position from the right */
+}
+
+.back-container img {
+    margin-top: 4px;
+    height: 44px;
+    align-items: center;
+}
+
+.back-container p {
+    padding-right: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.back-container:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(2px 4px 2px rgb(93, 93, 93)); /* Use filter for drop-shadow */
+    transition: transform 0.3s;
+    border: 2px rgb(225, 225, 225) solid;
+}

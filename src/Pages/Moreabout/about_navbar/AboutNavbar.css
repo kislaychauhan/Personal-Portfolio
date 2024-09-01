@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Navbar Container */
+.about-navbar-container {
+    background-color: #F5F5F5;
+    padding: 0 170px;
+    box-sizing: border-box;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+/* Navbar Styling */
+.about-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inherit;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Navigation Menu Styling */
+.about-nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.about-nav-menu li {
+    cursor: pointer;
+    transition: transform 0.1s ease-in, color 0.1s ease-in;
+}
+
+.about-nav-menu li a {
+    text-decoration: none; /* No underline */
+    color: #000; /* Black color */
+}
+
+.about-nav-menu li:hover {
+    transform: scale(1.1);
+    color: #A67B5B;
+}
+
+.about-nav-menu li:hover a {
+    color: #A67B5B; /* Change color on hover */
+}
+
+/* Follow Button Styling */
+.about-nav-connect {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 50px;
+    background-color: #1b1b1b;
+    color: #fff;
+    cursor: pointer;
+    gap: 4px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.about-nav-connect .about-follow-icon {
+    height: 28px;
+    display: block;
+    transition: display 0.2s ease-in-out;
+}
+
+.about-nav-connect .about-follow-white {
+    height: 28px;
+    display: none;
+}
+
+.about-nav-connect:hover .about-follow-icon {
+    display: none;
+}
+
+.about-nav-connect:hover .about-follow-white {
+    display: block;
+}
+
+.about-nav-connect .about-follow-text {
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 8px;
+    transition: color 0.2s ease-in-out;
+}
+
+.about-nav-connect:hover .about-follow-text {
+    color: #000;
+}
+
+.about-nav-connect:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+/* Scroll Blur Effect */
+.about-scroll-blur {
+    transition: filter 0.5s ease-in-out;
+    filter: blur(0);
+}
+
+.about-scroll-blur.scrolling {
+    filter: blur(5px);
+}

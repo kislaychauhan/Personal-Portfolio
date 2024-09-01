@@ -1,0 +1,175 @@
+.about{
+    margin: 80px;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: black;
+    
+}
+.about .img1{
+        position: absolute;
+        justify-content: left bottom;
+        margin-bottom: 0px;
+        height: 800px;
+        z-index: -2;
+        bottom: 0px;
+}
+.about .imag2{
+        position:absolute ;
+        z-index: 1;
+        height: 500px;
+        margin-left: 180px;
+        margin-top: 100px;
+        opacity: 100%;
+       
+}
+.about h1{
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff; 
+    font-family: 'Montserrat';
+    font-size: 60px;
+}
+.about h2{
+    color: #ffffff;
+    position: relative;
+    font-family: SoDo Sans;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 200;
+
+    width: 600px;
+    margin-top: 60px;
+    margin-right: 60px;
+    text-align: left;
+    justify-content: right;
+    left: 700px;
+    
+}
+
+.about-skill .about-skills {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    width: 500px;
+    margin-right: 80px;
+    text-align: left;
+    justify-content: left;
+    left: 700px;
+    margin-top: 20px;
+    top: 10px;
+}
+.about-skill .about-skills p{
+    font-family: SoDo Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #ffffff;
+    min-width: 160px;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+}
+.skill-heading {
+    color: #ffffff;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 500px;
+    gap: 30px;
+    left: 700px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.skill-heading p {
+    color: #ffffff;
+    font-family: 'SoDo Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    min-width: 160px;
+
+    margin-left: 30px;
+}
+
+.skill-heading img {
+    height: 20px;
+    margin: 0;
+    width: auto;
+    transition: transform 0.25s;
+}
+
+.skill-heading:hover img {
+    transform: scale(1.8) rotate(15deg);
+}
+
+
+.about-skill .about-skills hr{
+    justify-content: center;
+    height: 12px;
+    border: none;
+    background-color:  #daaf8f; 
+    border-radius:4px;
+    line-height: normal;
+    align-items: center;
+    outline: none;
+    margin-right: -140px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+.about-skill .about-skills:hover{
+    transform: scale(1.05);
+    text-shadow: 2px 4px 6px rgb(24, 24, 24);
+    transition-duration: .25s;
+     
+}
+.about-skill .about-skills:hover hr{ 
+    background-color:  #A67B5B;
+    transform: scale(1.05);
+    text-shadow: 2px 4px 6px rgb(151, 151, 151);
+    transition-duration: .25s;
+}
+.see {
+    display: flex;
+    border-radius: 50px;
+    border: 2px solid  #ffffff;
+    padding: 12px 20px;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 80px;
+    transition: .4s;
+    cursor: pointer;
+    color: rgb(215, 215, 215);
+    margin-left: 700px;
+    width: 120px;
+    margin-top: 40px;
+
+}
+.see .see-more {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.see .arrow_icon {
+    height: 20px;
+    margin-top: 5px;
+    fill: white;
+    color: white;
+}
+
+
+.see:hover {
+    background-color: #f0f0f0;
+    border-color: #A67B5B;
+    
+}
+.see:hover p{
+    color: black;
+}

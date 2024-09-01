@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+.nested-page-container {
+    overflow: hidden; /* This will hide the scrollbar for the nested page only */
+    height: 100vh; /* Ensure the container takes full height */
+}
+
+.background-image .social-pattern {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    justify-content: left;
+    margin-left: 0px;
+}
+
+
+.background-image .main-bg {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: -2;
+    justify-content: left;
+    left: 160px;
+    object-fit: cover;
+
+}
+.rectangle-container{
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+}
+.rect1{
+    position: absolute;
+    background-color: #002f4f;
+    height: 100vh;
+    width: 48px;
+}
+.rect2{
+    position: absolute;
+    background-color: #002f4f;
+    height: 100vh;
+    width: 48px;
+    left: 72px;
+}
+.rect3{
+    position: absolute;
+    background-color: #002f4f;
+    height: 100vh;
+    width: 48px;
+    left: 144px;
+}
+
+.background-image .scgb {
+    position: absolute;
+    right: 0;
+    opacity: .2 !important;
+    height: 100vh; 
+    z-index: -10; 
+    top: 0;
+}
+
+.social-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    
+    justify-content: flex-end;
+    gap: 8px;
+    z-index: 4;
+    margin-left: 600px;
+    padding: 20px;
+    flex-direction: column;
+   
+}
+
+.social-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Slightly enhanced shadow */
+    text-align: center;
+    gap: 20px;
+    
+    backdrop-filter: blur(6px); /* Glassy blur effect */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Subtle border for glass effect */
+}
+
+.social-card .profile-image {
+    height: 80px;
+    position: absolute;
+    
+}
+
+.social-card .logo-image {
+    height: 80px;
+    opacity: 0;
+    rotate: 0 1 0 180deg;
+}
+
+.social-card:hover .profile-image {
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: transform 0.6s ease;
+}
+
+.social-card:hover .logo-image {
+    opacity: 1;
+    transform: rotateY(180deg);
+    transition: transform 0.6s ease;
+    
+
+}
+
+.social-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.social-card .social-text h3 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.social-card .social-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    width: 300px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Custom CTA Button Styles */
+.behance-btn {
+    background-color: #1769ff;
+    color: #fff;
+}
+
+.dribbble-btn {
+    background-color: #ea4c89;
+    color: #fff;
+}
+
+.instagram-btn {
+    background-color: #0095F6;
+    color: #fff;
+}
+
+.linkedin-btn {
+    background-color: #0077b5;
+    color: #fff;
+}
+.x-btn {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Hover Effects */
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+
+.behance-btn:hover {
+    background-color: #0051d4;
+}
+
+.dribbble-btn:hover {
+    background-color: #c83270;
+}
+
+.instagram-btn:hover {
+    background-color: #0469ad;
+}
+
+.linkedin-btn:hover {
+    background-color: #005582;
+}
+.x-btn:hover {
+    background-color: #818181;
+}

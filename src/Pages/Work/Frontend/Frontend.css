@@ -1,0 +1,15 @@
+.container{
+    padding: 20px;
+    text-align: center;
+    
+}
+.heading{
+    margin-bottom: 20px;
+}
+
+.container .heading{
+    font-family: Sodo Sans;
+    color: #A67B5B;
+    font-weight: 700;
+    font-size: 40px;
+}

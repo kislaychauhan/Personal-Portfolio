@@ -1,0 +1,145 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.navbar-container {
+    background-color: #F5F5F5; /* Color for the margin area */
+    padding: 0px 170px; /* Adjust the padding to simulate the margin */
+    box-sizing: border-box;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure it stays above other elements */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;/* Background color of the navbar itself */
+    padding: 10px 20px; /* Optional: Adjust the padding inside the navbar */
+     /* Optional: Add a shadow for better visibility */
+    width: 100%; /* Make sure it takes full width of the container */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-connect {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 50px;
+    background: #1b1b1b;
+    cursor: pointer;
+    gap: 4px;
+    color: rgb(255, 255, 255);
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+}
+.nav-connect .follow_icon{
+    height: 28px;
+    align-items: left;
+    justify-content: left;
+    
+
+}
+.nav-connect .follow_white{
+    height: 28px;
+    align-items: left;
+    justify-content: left;
+    display: none;
+    text-decoration: none;
+}
+.nav-connect:hover .follow_icon{
+    display: none;
+}
+.nav-connect:hover .follow_white{
+    display: block;
+}
+
+.nav-connect .Follow_text{
+    font-size: 20px;
+    font-weight: Medium;
+    font-family: sans-serif;
+    text-align: right;
+    padding-right: 8px;
+    text-decoration: none;
+
+}
+.nav-connect:hover .Follow_text{
+    color: black;
+}
+.nav-connect:hover{
+    background-color: white;
+}
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navbar-container.hidden {
+    top: -100px; /* Adjust based on the height of your navbar */
+}
+
+.navbar-container.visible {
+    top: 0;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+    transition: ease-in;
+    transition-timing-function: ease-in;
+    transition-duration: .2s;
+}
+
+.nav-menu li {
+    cursor: pointer;
+}
+
+.nav-menu li:hover {
+    transform: scale(1.10);
+    color: #A67B5B;
+    transition-timing-function: ease-in;
+    transition-duration: .1s;
+}
+
+.anchor-link {
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+}
+
+.anchor-link3 {
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+}
+
+.anchor-link:focus {
+    color: rgb(26, 26, 26);
+}
+
+.scroll-blur {
+    transition: filter 0.5s ease-in-out;
+    filter: blur(0);
+}
+
+.scroll-blur.scrolling {
+    filter: blur(5px);
+}

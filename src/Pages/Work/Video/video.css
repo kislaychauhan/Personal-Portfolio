@@ -1,0 +1,62 @@
+.uiux-container3 {
+  padding: 20px;
+  text-align: center;
+}
+
+.uiux3 .head3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.uiux3 .head3 {
+  font-family: Sodo Sans;
+  color: #A67B5B;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.uiux3 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.slider3 .video-container3 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider3 .video-container3 h1 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.slider3 .video-container3 h2 {
+  font-size: 12px;
+  font-weight: 12px;
+  color: grey;
+  width: fit-content;
+  text-align: center;
+  align-items: center;
+}
+
+.slider3 video {
+  max-height: 400px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+.slider3 {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.slider3::-webkit-scrollbar {
+  display: none;
+}

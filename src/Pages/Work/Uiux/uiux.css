@@ -1,0 +1,63 @@
+.uiux-container {
+  padding: 20px;
+}
+
+.uiux .head {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+}
+.uiux-container .hea{
+    margin: 0px;
+  }
+.uiux {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.uiux .head h1{
+  font-family: Sodo Sans;
+  color: #A67B5B;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.slider2 .image-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.slider2 .image-container h1 {
+  font-size: 20px;
+    margin-top: 10px;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+}
+.slider2 .image-container h2 {
+  font-size: 12px;
+  font-weight: 12px;
+  
+    color: grey;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+}
+
+.slider2 img {
+  max-height: 280px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
