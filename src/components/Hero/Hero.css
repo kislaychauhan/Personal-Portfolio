@@ -213,13 +213,18 @@
 
 /* Mobile Screens */
 @media (max-width: 768px) {
+    .hero{
+        height: 100vh;
+    }
     .img1 {
-        height: 300px;
+        height: 700px;
+        top: 60px;
     }
 
     .img2,
     .img3 {
-        height: 350px;
+        opacity: .3 !important;
+        height: 500px;
     }
 
     .hero h1 {
@@ -245,7 +250,7 @@
 
     .hero-action {
         flex-direction: column;
-        margin-top: 320px;
+        margin-top: 620px;
     }
 
     .hero-connect,

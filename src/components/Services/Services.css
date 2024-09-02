@@ -1,30 +1,32 @@
-.services{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 80px;
-        margin: 180px;
-        
-        font-family: SoDo Sans;
-    }
+/* Base code remains the same */
 
-        .services-title{
-            position: relative;
-            justify-content: center;
-            text-align: center;
-            color: #241407; 
-            font-family: 'Montserrat';
-            font-size: 30px;
-        }
-.services-title img{
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 180px;
+    font-family: SoDo Sans;
 }
 
-.services-format{
+.services-title {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: #241407;
+    font-family: 'Montserrat';
+    font-size: 30px;
+}
+
+.services-title img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.services-format {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,82 +39,131 @@
     cursor: pointer;
 }
 
-.services-container{
-display: grid;
-gap: 40px;
-grid-template-columns :  1fr 1fr 1fr;
-margin-bottom: 80px;
+.services-container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
 }
 
-.services-format h3{
+.services-format h3 {
     font-size: 20px;
     font-weight: 600;
 }
-    .services-format h2{
+
+.services-format h2 {
     font-size: 28px;
     font-weight: 700;
-    color: #A67B5B; 
+    color: #A67B5B;
     background-clip: text;
     -webkit-background-clip: text;
-   
-    }
+}
 
-.services-format h4{
-        font-size: 16px;
-        font-weight: 700;
-        color: #686868; 
-        background-clip: text;
-        -webkit-background-clip: text;
-       
-        }
-.services-container .projects{
+.services-format h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #686868;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.services-container .projects {
     display: flex;
     gap: 16px;
-    
     text-align: left;
     align-items: center;
 }
-.services-container .projects h5{
+
+.services-container .projects h5 {
     font-size: 1.4em;
     color: #A67B5B;
 }
-.services-format p{
+
+.services-format p {
     font-size: 16px;
     font-weight: 400;
 }
 
-
-.arrow_icon img{
+.arrow_icon img {
     fill: #241407;
 }
-.services-readmore{
+
+.services-readmore {
     display: flex;
     color: #241407;
     gap: 8px;
 }
 
-.services-readmore img{
-   
+.services-readmore img {
     color: #241407;
     height: 16px;
     margin-top: 3px;
-    
 }
-.services-readmore:hover{
+
+.services-readmore:hover {
     transform: scale(1.1);
     transition: ease-in;
     transition-timing-function: ease-in;
     transition-duration: .2s;
     font-weight: 700px;
-
 }
+
 .services-format:hover {
     transform: scale(1.04);
-    background-image: linear-gradient(105deg,#edeae9, #d4ceca);
+    background-image: linear-gradient(105deg, #edeae9, #d4ceca);
     transition: ease-in;
     transition-timing-function: ease-in;
     transition-duration: .2s;
     border: 1px solid #A67B5B;
     border-radius: 8px;
-    
+}
+
+/* Responsive adjustments with media queries */
+
+/* Medium Screens */
+@media only screen and (max-width: 1024px) {
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        margin: 20px;
+        gap: 40px;
+    }
+
+    .services-format {
+        padding: 30px;
+    }
+
+    .services-title {
+        font-size: 24px;
+    }
+
+    .services-format h2 {
+        font-size: 24px;
+    }
+
+    .services-format h3 {
+        font-size: 18px;
+    }
+
+    .services-format h4 {
+        font-size: 14px;
+    }
+
+    .services-readmore {
+        gap: 4px;
+    }
+
+    .services-readmore img {
+        height: 12px;
+        margin-top: 2px;
+    }
 }

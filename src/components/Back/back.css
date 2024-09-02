@@ -34,3 +34,8 @@
     transition: transform 0.3s;
     border: 2px rgb(225, 225, 225) solid;
 }
+@media (max-width: 768px) {
+    .back-container{
+        display: none;
+    }
+}

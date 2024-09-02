@@ -1,4 +1,6 @@
-.contact{
+/* Base code remains the same */
+
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,10 +9,11 @@
     margin: 80px 170px;
 }
 
-.contact-title{
+.contact-title {
     position: relative;
 }
-.contact-title h1{
+
+.contact-title h1 {
     position: relative;
     justify-content: center;
     text-align: center;
@@ -18,65 +21,72 @@
     font-family: 'Montserrat';
     font-size: 60px;
 }
-.contact-title img{
+
+.contact-title img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
-.contact-section{
+
+.contact-section {
     display: flex;
     gap: 150px;
 }
-.contact-left{
+
+.contact-left {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.contact-left h1{
+
+.contact-left h1 {
     font-size: 40px;
     font-family: SoDo Sans;
     font-weight: 400;
     background: rgb(44, 42, 42);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-filkcolor: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
-.contact-left p{
+.contact-left p {
     max-width: 500px;
     color: #171717;
     font-size: 16px;
     line-height: 24px;
     font-family: outfit;
 }
-.contact-details{
-display: flex;
-flex-direction: column;
-gap: 30px;
-color:#D8D8D8;
-font-size: 22px;
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D8D8D8;
+    font-size: 22px;
 }
-.contact-detail{
+
+.contact-detail {
     display: flex;
     align-items: center;
     gap: 20px;
-    
 }
-.contact-right{
+
+.contact-right {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 30px;
 }
 
-.contact-right label{
+.contact-right label {
     color: #272727;
     font-size: 20px;
     font-weight: 500;
     font-family: Outfit;
 }
-    .contact-right input{
+
+.contact-right input {
     border: none;
     width: 400px;
     height: 42px;
@@ -86,55 +96,125 @@ font-size: 22px;
     color: #171717;
     font-family: Outfit;
     font-size: 16px;
+}
+
+.contact-right textarea {
+    width: 400px;
+    border: none;
+    padding: 20px;
+    border-radius: 4px; 
+    background: #eaeaea;
+    font-family: Outfit;
+    font-size: 16px;
+}
+
+.contact-submit {
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: rgb(56, 56, 56);
+    font-size: 16px;
+    padding: 12px 40px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contact-submit:hover {
+    transform: scale(1.1);
+    background-color: #A67B5B;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Responsive adjustments with media queries */
+
+/* Medium Screens */
+@media only screen and (max-width: 1024px) {
+    .contact {
+        margin: 60px 40px;
     }
 
-    .contact-right textarea{
-        width: 400px;
-        border: none;
-        padding: 20px;
-        border-radius: 4px; 
-        background :#eaeaea;;
-        font-family: Outfit;
-        font-size: 16px;
+    .contact-section {
+        flex-direction: column;
+        gap: 40px;
     }
 
-.contact-submit{
-        border: none;
-        color:white;
-        border-radius: 50px;
-        background: rgb(56, 56, 56);
-        font-size: 16px;
-        padding: 12px 40px;
-        margin-bottom: 50px;
-        cursor: pointer;
-        transition: .3s;
-
+    .contact-left, .contact-right {
+        align-items: center;
     }
 
-    .contact-submit:hover{
-        transform: scale(1.1);
-        background-color: #A67B5B;
+    .contact-left h1 {
+        font-size: 30px;
     }
-    .notification {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background-color: #4caf50;
-        color: white;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        animation: fadein 0.5s, fadeout 0.5s 2.5s;
-      }
-      
-      @keyframes fadein {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-      
-      @keyframes fadeout {
-        from { opacity: 1; }
-        to { opacity: 0; }
-      }
-      
+
+    .contact-left p {
+        max-width: 100%;
+    }
+
+    .contact-right input, .contact-right textarea {
+        width: 100%;
+    }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+    .contact {
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    .contact-title h1 {
+        font-size: 24px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 12px;
+        
+    }
+    
+
+    .contact-left h1 {
+        font-size: 24px;
+    }
+
+    .contact-left p {
+        font-size: 14px;
+    }
+
+    .contact-right input, .contact-right textarea {
+        
+        width: 80%;
+    }
+    .contact-right{
+        margin-top: 40px;
+    }
+
+    .contact-submit {
+        font-size: 14px;
+        margin-left: 0px;
+        padding: 10px 20px;
+    }
+}

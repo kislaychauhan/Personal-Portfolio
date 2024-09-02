@@ -1,4 +1,6 @@
-.mywork{
+/* Base code remains the same */
+
+.mywork {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,26 +9,30 @@
     margin: 60px;
     font-family: SoDo Sans;
 }
-.mywork-title{
+
+.mywork-title {
     position: relative;
     justify-content: center;
     text-align: center;
-    color: #241407; 
+    color: #241407;
     font-family: 'Montserrat';
     font-size: 30px;
 }
-.mywork-title img{
+
+.mywork-title img {
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
 }
-.mywork-container{
+
+.mywork-container {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
 }
-.mywork-container img{
+
+.mywork-container img {
     box-sizing: border-box;
     width: 319px;
     height: 210px;
@@ -34,12 +40,11 @@
     cursor: pointer;
 }
 
-.mywork-container img:hover{
+.mywork-container img:hover {
     transform: scale(1.05) rotate(-5deg);
-    
 }
 
-.mywork-showmore{
+.mywork-showmore {
     display: flex;
     gap: 15px;
     border-radius: 50px;
@@ -52,20 +57,69 @@
     cursor: pointer;
     color: rgb(29, 29, 29);
 }
-.Show{
+
+.Show {
     color: rgb(29, 29, 29);
     font-weight: 400;
     text-decoration: none;
 }
-.mywork-showmore img{
+
+.mywork-showmore img {
     height: 20px;
     margin-top: 5px;
 }
 
-.mywork-showmore:hover{
+.mywork-showmore:hover {
     transform: scale(1.044);
     background-color: #A67B5B;
     color: rgb(42, 42, 42);
-    
-    
+}
+
+/* Responsive adjustments with media queries */
+
+/* Medium Screens */
+@media only screen and (max-width: 1024px) {
+    .mywork-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mywork-container img {
+        width: 280px;
+        height: 184px;
+    }
+
+    .mywork {
+        margin: 40px;
+        gap: 60px;
+    }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+    .mywork-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mywork-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mywork {
+        margin: 20px;
+        gap: 40px;
+    }
+
+    .mywork-title {
+        font-size: 24px;
+    }
+
+    .mywork-showmore {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .mywork-showmore img {
+        height: 16px;
+    }
 }

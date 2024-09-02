@@ -129,6 +129,13 @@ const Navbar = ({ menu, handleMenuClick, underline }) => {
                     </a>
                     {menu === "contact" ? <img src={underline} alt='' /> : null}
                 </li>
+                {/* Follow Button in Mobile Menu */}
+                <li>
+                    <Link to={{ pathname: '/social'}}>
+                        <a className='anchor-link'>Follow</a> 
+                        
+                    </Link>
+                </li>
             </ul>
         </div>
     );

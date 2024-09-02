@@ -196,3 +196,52 @@ body {
 .x-btn:hover {
     background-color: #818181;
 }
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+    /* Hide rectangle bars on mobile screens */
+    .rect1,
+    .rect2,
+    .rect3 {
+        display: none;
+    }
+
+    /* Adjust the background image positioning and scale */
+    .background-image .main-bg {
+        transform: scale(1.4) !important; /* Reset the scaling if needed */
+        bottom: 0px;
+        left: 0; /* Adjust positioning as needed */
+        width: 100%; /* Ensure it covers the viewport width */
+        height: auto; /* Maintain aspect ratio */
+        overflow-x: hidden !important; /* Prevent horizontal scrolling */
+    }
+
+    .background-image .scgb {
+        display: none;
+    }
+
+    /* Center the social cards container and adjust card styling */
+    .social-cards-container {
+        display: flex;
+        top: 100px;
+        height: 800px;
+        overflow-y: auto;
+        flex-direction: row;
+        align-items: center; /* Center the cards horizontally */
+        justify-content: center; /* Center the cards vertically */
+        gap: 16px; /* Adjust gap between cards if needed */
+        margin: 0 auto; /* Center container horizontally */
+        padding: 20px; /* Ensure there's padding around the container */
+        width: 100%; /* Full width for mobile */
+        position: relative; /* Ensure proper stacking */
+        z-index: 5; /* Bring social cards above the background image */
+    }
+
+    .social-card {
+        width: 90%; /* Adjust card width for mobile */
+        max-width: 300px; /* Ensure cards don't get too large */
+        flex-direction: column;
+        margin: 0; /* Remove left margin */
+        position: relative; /* Ensure proper stacking */
+        z-index: 5; /* Bring social cards above the background image */
+    }
+}

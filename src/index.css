@@ -3,9 +3,10 @@
     padding: 0;
 }
 body{
+    width: 100vw;
     height: 100vh;
     background-color: #F5F5F5;
     color: rgb(25, 25, 25);
-    
+    overflow-x: none !important;
 }
 
