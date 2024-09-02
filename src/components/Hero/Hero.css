@@ -1,48 +1,49 @@
-.hero{
+/* Base styles remain the same */
+
+.hero {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 35px;
     overflow-x: hidden;
     overflow-y: hidden;
+    padding: 0 20px; /* Added padding for smaller screens */
 }
 
-.img1{
-     margin-top: -120px;
-     height: 550px; 
-   
-     position: relative;
-     justify-content: center;
-     align-items: center;
-     margin-bottom: 0px;
-     
-}
-.img2{
-     margin-top: 40px;
-     /* height: 520px;  */;
-     height: 620px;
-     flex-shrink: 0;
-     position: absolute;
-     top: 00px;
-     right: 0px;
-     opacity: 0.1;
-     filter: grayscale(100%);
-     z-index: -2;
-}
-.img3{
-        margin-top: 140px;
-        height: 600px; /* Adjusted height */
-        position: absolute;
-        flex-shrink: 0;
-        left: 0px;
-        top: -100px; /* Adjusted position */
-        filter: grayscale(1000%);
-        opacity: 0.1; /* Adjust opacity here (0.5 is 50% opacity) */
-        z-index: -2;
-    
+.img1 {
+    margin-top: -120px;
+    height: 550px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
 }
 
-.hero h1{
+.img2 {
+    margin-top: 40px;
+    height: 620px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.1;
+    filter: grayscale(100%);
+    z-index: -2;
+}
+
+.img3 {
+    margin-top: 140px;
+    height: 600px;
+    position: absolute;
+    flex-shrink: 0;
+    left: 0;
+    top: -100px;
+    filter: grayscale(100%);
+    opacity: 0.1;
+    z-index: -2;
+}
+
+.hero h1 {
     color: #A67B5B;
     text-align: center;
     font-family: 'Montserrat';
@@ -53,18 +54,15 @@
     position: absolute;
     top: 160px;
     z-index: -1;
-    
-
 }
 
-
-.hero-container{
+.hero-container {
     display: flex;
     flex-direction: row;
     margin-top: 120px;
-
 }
-.hero h2{
+
+.hero h2 {
     color: #879676;
     position: relative;
     z-index: -2;
@@ -74,10 +72,9 @@
     font-weight: 600;
     line-height: normal;
     display: inline-block;
-    
 }
 
-.hero h3{
+.hero h3 {
     position: relative;
     z-index: -1;
     color: #879676;
@@ -88,9 +85,9 @@
     line-height: normal;
     display: inline-block;
     margin-left: 8px;
-    
 }
-.hero-action{
+
+.hero-action {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -98,32 +95,31 @@
     font-weight: 500;
     position: absolute;
     margin-top: 480px;
-    
-    
 }
 
-
-.hero-connect{
+.hero-connect {
     padding: 15px 25px;
-    border-radius: 12px;    
+    border-radius: 12px;
     background: #F9ECAA;
     font-size: 22px;
     cursor: pointer;
     color: #A67B5B;
-    font-family: montserrat;
+    font-family: Montserrat;
 }
-.hero-connect:hover{
+
+.hero-connect:hover {
     transform: scale(1.05);
     transition: ease-in;
     transition-timing-function: ease-in;
     transition-duration: .2s;
 }
+
 .hero h4 {
     position: absolute;
-    text-align: center;    
-    color: transparent; /* Set text color to transparent */
-    -webkit-text-stroke-width: 1px; /* Define stroke width */
-    -webkit-text-stroke-color: #A67B5B; /* Define stroke color */
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #A67B5B;
     font-family: 'Montserrat';
     font-size: 80px;
     font-style: normal;
@@ -132,44 +128,48 @@
     top: 272px;
     z-index: -1;
 }
-.hero-resume{
+
+.hero-resume {
     padding: 15px 25px;
     top: 10px;
-    font-family: montserrat;
-    border-radius: 12px;    
+    font-family: Montserrat;
+    border-radius: 12px;
     background: #A67B5B;
     font-size: 22px;
     cursor: pointer;
     color: #ffffff;
 }
-.hero-resume:hover{
+
+.hero-resume:hover {
     transform: scale(1.05);
     transition: ease-in;
     transition-timing-function: ease-in;
     transition-duration: .2s;
 }
-.anchor-link1{
+
+.anchor-link1 {
     padding: 15px 15px;
-    border-radius: 12px;    
+    border-radius: 12px;
     background: #F9ECAA;
     font-size: 22px;
     cursor: pointer;
     color: #A67B5B;
-    font-family: montserrat;
+    font-family: Montserrat;
     text-decoration: none;
 }
-.anchor-link2{
-    
+
+.anchor-link2 {
     text-decoration: none;
     padding: 15px 15px;
     top: 10px;
-    font-family: montserrat;
-    border-radius: 12px;    
+    font-family: Montserrat;
+    border-radius: 12px;
     background: #A67B5B;
     font-size: 22px;
     cursor: pointer;
     color: #ffffff;
 }
+
 .scroll-blur {
     transition: filter 0.5s ease-in-out;
     filter: blur(0);
@@ -177,4 +177,86 @@
 
 .scroll-blur.scrolling {
     filter: blur(5px);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+    .img1 {
+        height: 400px;
+    }
+
+    .img2,
+    .img3 {
+        height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+        top: 140px;
+    }
+
+    .hero h4 {
+        font-size: 50px;
+        top: 200px;
+    }
+
+    .hero-container {
+        margin-top: 100px;
+    }
+
+    .hero-action {
+        margin-top: 400px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .img1 {
+        height: 300px;
+    }
+
+    .img2,
+    .img3 {
+        height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        top: 120px;
+    }
+
+    .hero h4 {
+        font-size: 30px;
+        top: 160px;
+    }
+
+    .hero-container {
+        flex-direction: row;
+        margin-top: 80px;
+    }
+
+    .hero h2,
+    .hero h3 {
+        font-size: 20px;
+        top: 20px;
+    }
+
+    .hero-action {
+        flex-direction: column;
+        margin-top: 320px;
+    }
+
+    .hero-connect,
+    .hero-resume {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .anchor-link1,
+    .anchor-link2 {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
 }

@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 import plus_icon from '../../assets/plus_icon.svg';
 import Plus from '../../assets/Plus.svg';
 
-const Navbar = ({ menu, handleMenuClick, underline}) => {
+const Navbar = ({ menu, handleMenuClick, underline }) => {
     const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
     const [visible, setVisible] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -42,12 +43,22 @@ const Navbar = ({ menu, handleMenuClick, underline}) => {
             }, 500);
         }
         handleMenuClick(targetId.substring(1));
+        setMenuOpen(false); // Close the menu on link click
+    };
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
     };
 
     return (
         <div className={`navbar-container ${visible ? 'visible' : 'hidden'}`}>
             <div className='navbar'>
-                <ul className="nav-menu">
+                <div className="hamburger" onClick={toggleMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
                     <li>
                         <a className='anchor-link' href='#home' onClick={(e) => handleClick(e, '#home')}>
                             <p>Home</p>
@@ -85,6 +96,40 @@ const Navbar = ({ menu, handleMenuClick, underline}) => {
                     <h1 className='Follow_text'>Follow</h1> 
                 </Link>
             </div>
+
+            {/* Mobile Menu */}
+            <ul className={`nav-menu-mobile ${menuOpen ? 'active' : ''}`}>
+                <li>
+                    <a className='anchor-link' href='#home' onClick={(e) => handleClick(e, '#home')}>
+                        <p>Home</p>
+                    </a>
+                    {menu === "home" ? <img src={underline} alt='' /> : null}
+                </li>
+                <li>
+                    <a className='anchor-link' href='#about' onClick={(e) => handleClick(e, '#about')}>
+                        <p>About</p>
+                    </a>
+                    {menu === "about" ? <img src={underline} alt='' /> : null}
+                </li>
+                <li>
+                    <a className='anchor-link' href='#services' onClick={(e) => handleClick(e, '#services')}>
+                        <p>Services</p>
+                    </a>
+                    {menu === "services" ? <img src={underline} alt='' /> : null}
+                </li>
+                <li>
+                    <a className='anchor-link' href='/resume.pdf' download="Resume.doc">
+                        <p>Resume</p>
+                    </a>
+                    {menu === "resume" ? <img src={underline} alt='' /> : null}
+                </li>
+                <li>
+                    <a className='anchor-link' href='#contact' onClick={(e) => handleClick(e, '#contact')}>
+                        <p>Contact</p>
+                    </a>
+                    {menu === "contact" ? <img src={underline} alt='' /> : null}
+                </li>
+            </ul>
         </div>
     );
 }

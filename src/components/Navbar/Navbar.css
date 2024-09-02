@@ -1,32 +1,31 @@
+/* Base styles remain the same */
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
-    
 }
 
 .navbar-container {
-    background-color: #F5F5F5; /* Color for the margin area */
-    padding: 0px 170px; /* Adjust the padding to simulate the margin */
+    background-color: #F5F5F5;
+    padding: 0px 170px;
     box-sizing: border-box;
     align-items: center;
     height: 60px;
     position: fixed;
     width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1; /* Ensure it stays above other elements */
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F5F5F5;/* Background color of the navbar itself */
-    padding: 10px 20px; /* Optional: Adjust the padding inside the navbar */
-     /* Optional: Add a shadow for better visibility */
-    width: 100%; /* Make sure it takes full width of the container */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .nav-menu {
@@ -51,52 +50,56 @@ body {
     transition-timing-function: ease-in-out;
     text-decoration: none;
 }
-.nav-connect .follow_icon{
+
+.nav-connect .follow_icon {
     height: 28px;
     align-items: left;
     justify-content: left;
-    
-
 }
-.nav-connect .follow_white{
+
+.nav-connect .follow_white {
     height: 28px;
     align-items: left;
     justify-content: left;
     display: none;
     text-decoration: none;
 }
-.nav-connect:hover .follow_icon{
+
+.nav-connect:hover .follow_icon {
     display: none;
 }
-.nav-connect:hover .follow_white{
+
+.nav-connect:hover .follow_white {
     display: block;
 }
 
-.nav-connect .Follow_text{
+.nav-connect .Follow_text {
     font-size: 20px;
     font-weight: Medium;
     font-family: sans-serif;
     text-align: right;
     padding-right: 8px;
     text-decoration: none;
-
 }
-.nav-connect:hover .Follow_text{
+
+.nav-connect:hover .Follow_text {
     color: black;
 }
-.nav-connect:hover{
+
+.nav-connect:hover {
     background-color: white;
 }
+
 .navbar-container {
     position: fixed;
     top: 0;
     width: 100%;
     transition: top 0.3s;
-    z-index: 1000; /* Ensure the navbar is above other content */
+    z-index: 1000;
 }
 
 .navbar-container.hidden {
-    top: -100px; /* Adjust based on the height of your navbar */
+    top: -100px;
 }
 
 .navbar-container.visible {
@@ -142,4 +145,151 @@ body {
 
 .scroll-blur.scrolling {
     filter: blur(5px);
+}
+
+/* Hide the menu for mobile */
+.nav-menu-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu-mobile li {
+    margin: 10px 0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: #1b1b1b;
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+    .navbar-container {
+        padding: 0px 50px; /* Reduce padding */
+    }
+
+    .nav-menu {
+        gap: 40px; /* Reduce gap between menu items */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .nav-connect .Follow_text {
+        font-size: 18px; /* Adjust follow text size */
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    /* Navbar.css */
+
+/* Existing styles remain unchanged */
+
+.navbar-container {
+    background-color: #F5F5F5;
+    padding: 0px 170px;
+    box-sizing: border-box;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+/* Hide the menu for mobile */
+.nav-menu-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu-mobile li {
+    margin: 10px 0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: #1b1b1b;
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    width: 25px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0px 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu-mobile.active {
+        display: flex;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+}
+
 }
