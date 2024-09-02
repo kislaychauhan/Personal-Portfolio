@@ -61,7 +61,7 @@ const Navbar = ({ menu, handleMenuClick, underline }) => {
                 <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
                     <li>
                         <a className='anchor-link' href='#home' onClick={(e) => handleClick(e, '#home')}>
-                           
+                            <p>Home</p>
                         </a>
                         {menu === "home" ? <img src={underline} alt='' /> : null}
                     </li>
