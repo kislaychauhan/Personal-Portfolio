@@ -212,11 +212,15 @@ body {
         left: 0; /* Adjust positioning as needed */
         width: 100%; /* Ensure it covers the viewport width */
         height: auto; /* Maintain aspect ratio */
-        overflow-x: hidden !important; /* Prevent horizontal scrolling */
+        overflow-x: hidden ; /* Prevent horizontal scrolling */
     }
 
     .background-image .scgb {
-        display: none;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        align-content: center ;
+
     }
 
     /* Center the social cards container and adjust card styling */
@@ -244,4 +248,48 @@ body {
         position: relative; /* Ensure proper stacking */
         z-index: 5; /* Bring social cards above the background image */
     }
+}
+.glow-button {
+    background-color: #4128FD; /* Default button background */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Adding the gradient for the glow effect */
+.glow-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(134, 59, 251, 0.6), rgba(9, 170, 253, 0.6));
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    border-radius: inherit; /* Ensure the glow matches the button's shape */
+}
+
+/* Hover effect for the button */
+.glow-button:hover {
+    background-color: #3a24e0; /* Slightly darker shade on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Active state for the button */
+.glow-button:active {
+    transform: scale(1); /* Reset scale for active state */
+}
+
+/* Gradient glow effect on hover */
+.glow-button:hover::after {
+    opacity: 1;
+    filter: blur(10px); /* Soft glow effect */
 }

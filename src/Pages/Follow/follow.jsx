@@ -1,6 +1,6 @@
 import React from 'react';
 import './follow.css';
-import bgImg from '../../assets/bgImg.svg'
+import bgImg from '../../assets/bgImg.webp'
 import patternsocial from '../../assets/patternsocial.svg'
 import behance from '../../assets/behance.png'
 import instagram from '../../assets/instagram.png'
@@ -16,11 +16,11 @@ const Follow = () => {
     <div className="follow-container">
     <div className="background-image">
       {/* <img className='social-pattern' data-aos='slide-right' src={patternsocial} alt="Pattern" /> */}
-      <div className="rectangle-container">
+      {/* <div className="rectangle-container">
         <div className="rect1" data-aos='slide-up'></div>
         <div className="rect2" data-aos='slide-down'></div>
         <div className="rect3" data-aos='slide-up'></div>
-      </div>
+      </div> */}
       <img className='main-bg' data-aos='slide-up' src={bgImg} alt="Background" />
       <img className='scgb' data-aos='fade-left' src={scbg} alt="Graphic Background" />
       <div className="social-cards-container" data-aos='slide-left'>

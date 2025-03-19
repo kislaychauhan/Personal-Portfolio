@@ -3,16 +3,17 @@
     flex-direction: row;
     white-space: nowrap;
     padding: 4px 4px;
-    position: fixed; /* Changed to fixed */
-    background-color: black;
-    margin: 50px; /* You might need to adjust this */
+    position: fixed; 
+    /* background-color: #b1b1b11a; */
+    margin: 50px;
     align-items: center;
-    width: fit-content; /* Ensure the container has width */
+    width: fit-content; 
     height: fit-content;
-    border-radius: 50px;
+    /* border-radius: 10px; */
     z-index: 1000;
-    border: 1px rgb(191, 191, 191) solid;
-    /* Adjust position from the right */
+    text-decoration: none !important;
+    /* border: 1px rgb(191, 191, 191,0.3) solid; */
+    
 }
 
 .back-container img {
@@ -21,18 +22,19 @@
     align-items: center;
 }
 
-.back-container p {
+/* .back-container p {
     padding-right: 16px;
-    color: white;
+    color: rgb(130, 108, 94);
     text-align: center;
-    text-decoration: none;
-}
+    text-decoration: none !important;
+} */
 
 .back-container:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(2px 4px 2px rgb(93, 93, 93)); /* Use filter for drop-shadow */
+    transform: scale(1.01);
+    /* filter: drop-shadow(2px 4px 2px rgb(93, 93, 93)); */
     transition: transform 0.3s;
-    border: 2px rgb(225, 225, 225) solid;
+    /* border: 2px rgb(225, 225, 225) solid; */
+    text-decoration: none;
 }
 @media (max-width: 768px) {
     .back-container{

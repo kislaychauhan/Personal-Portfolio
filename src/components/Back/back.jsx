@@ -1,7 +1,7 @@
 import React from 'react';
 import './back.css';
 import { Link } from 'react-router-dom';
-import backimg from '../../assets/backimg.svg';
+import backimg from '../../assets/backimg.png';
 
 const back = () => {
   return (
@@ -16,7 +16,7 @@ const back = () => {
       <Link to={{ pathname: '/', hash: '#home' }}>
       
       
-       <p>Back</p> 
+       {/* <p>Back</p>  */}
       
       </Link>
       </div>

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import './Hero.css';
-import profile_img from '../../assets/profile_img.png';
-import right_photo from '../../assets/right_photo.png';
-import left_photo from '../../assets/left_photo.png';
+import profile_img from '../../assets/profile_img.webp';
+import right_photo from '../../assets/right_photo.webp';
+import left_photo from '../../assets/left_photo.webp';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

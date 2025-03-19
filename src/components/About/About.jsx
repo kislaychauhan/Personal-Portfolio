@@ -33,7 +33,7 @@ const About = () => {
             </div>
             <div className="see">
             <Link to="/About" className='see-more'><p>See More</p></Link>
-            <img className='arrow_icon' src={arrow_icon} alt="arrow icon"/>
+            {/* <img className='arrow_icon' src={arrow_icon} alt="arrow icon"/> */}
             </div>           
     </div>
   )

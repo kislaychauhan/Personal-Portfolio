@@ -42,7 +42,6 @@ body {
     align-items: center;
     padding: 4px 12px;
     border-radius: 50px;
-    background: #1b1b1b;
     cursor: pointer;
     gap: 4px;
     color: rgb(255, 255, 255);
@@ -65,18 +64,11 @@ body {
     text-decoration: none;
 }
 
-.nav-connect:hover .follow_icon {
-    display: none;
-}
-
-.nav-connect:hover .follow_white {
-    display: block;
-}
 
 .nav-connect .Follow_text {
     font-size: 20px;
-    font-weight: Medium;
-    font-family: sans-serif;
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: right;
     padding-right: 8px;
     text-decoration: none;
@@ -86,9 +78,7 @@ body {
     color: black;
 }
 
-.nav-connect:hover {
-    background-color: white;
-}
+
 
 .navbar-container {
     position: fixed;
@@ -107,10 +97,10 @@ body {
 }
 
 .nav-connect:hover {
-    transform: scale(1.05);
-    transition: ease-in;
-    transition-timing-function: ease-in;
-    transition-duration: .2s;
+    transform: scale(1.02);
+    transition: linear;
+    transition-timing-function: ease-in-out;
+    transition-duration: .6s;
 }
 
 .nav-menu li {
